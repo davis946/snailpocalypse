@@ -1,0 +1,157 @@
+/* Snailpocalypse site — warm pastel, matches the in-app design language. */
+:root {
+  --bg: #FFF7EC;
+  --card: #FFFDF9;
+  --ink: #4A392C;
+  --muted: #8B7663;
+  --rose: #F4729C;
+  --blush: #FFD3E0;
+  --butter: #FFD98F;
+  --mint: #8FE3C0;
+  --teal: #2E9E92;
+  --line: #F0E2CC;
+  --shadow: 0 10px 30px rgba(122, 90, 58, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-rounded, "SF Pro Rounded", -apple-system, system-ui, "Segoe UI", sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px 20px 56px;
+}
+
+/* Header shared by every page */
+header.site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0 6px;
+}
+header.site .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+}
+header.site .brand svg { width: 44px; height: auto; }
+header.site nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-left: 16px;
+}
+header.site nav a:hover { color: var(--teal); }
+
+/* Landing hero */
+.hero { text-align: center; padding: 28px 0 8px; }
+.hero-toby { width: min(300px, 72vw); height: auto; margin: 0 auto; display: block; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.hero-toby { animation: bob 4.5s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .hero-toby { animation: none; } }
+
+h1 {
+  font-size: clamp(2.1rem, 7vw, 3rem);
+  margin: 18px 0 4px;
+  letter-spacing: -0.02em;
+}
+.tagline {
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
+  font-weight: 700;
+  color: var(--teal);
+  margin: 0 0 14px;
+}
+.lede {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 46ch;
+  margin: 0 auto 22px;
+}
+.badge {
+  display: inline-block;
+  background: var(--blush);
+  color: #A63D63;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+/* Cards */
+.cards { display: grid; gap: 14px; margin: 34px 0 8px; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+.card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+
+/* Toby quote */
+.quote {
+  margin: 30px auto 6px;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.quote .who { display: block; margin-top: 6px; font-size: 0.9rem; font-weight: 600; color: var(--muted); }
+
+/* Text pages (privacy, support) */
+article { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 26px 26px 30px; box-shadow: var(--shadow); margin-top: 18px; }
+article h1 { font-size: 1.7rem; margin: 0 0 2px; }
+article .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 18px; }
+article h2 { font-size: 1.12rem; margin: 26px 0 6px; }
+article p, article li { color: #5D4A3A; font-size: 0.98rem; }
+article ul { padding-left: 22px; }
+.tldr {
+  background: #EFFAF3;
+  border: 1px solid #CBEEDD;
+  border-radius: 16px;
+  padding: 14px 18px;
+  color: #1F6B54;
+  font-weight: 600;
+  font-size: 0.97rem;
+}
+a { color: var(--teal); }
+
+/* FAQ */
+details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin: 10px 0;
+  box-shadow: var(--shadow);
+}
+details summary { font-weight: 700; cursor: pointer; }
+details p { color: var(--muted); margin: 10px 0 2px; }
+
+/* Footer */
+footer {
+  margin-top: 44px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+footer a { color: var(--muted); text-decoration: none; font-weight: 600; margin: 0 8px; }
+footer a:hover { color: var(--teal); }

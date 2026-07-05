@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snailpocalypse — an immortal snail is coming. Walk.</title>
+<meta name="description" content="Snailpocalypse is an iPhone game where an immortal snail slowly chases you through real life. Your daily steps keep you ahead. He never stops.">
+<meta property="og:title" content="Snailpocalypse">
+<meta property="og:description" content="An immortal snail is coming. Walk. Your real daily steps are the whole game.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐌</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="40" y="170" width="190" height="9" rx="4.5" fill="#8FE3C0" opacity=".6"/>
+        <circle cx="30" cy="174.5" r="3.2" fill="#8FE3C0" opacity=".4"/>
+        <circle cx="17" cy="174.5" r="2.2" fill="#8FE3C0" opacity=".25"/>
+        <path d="M34 168 C30 156 40 146 58 144 L148 144 C166 144 172 134 174 112 C175 92 182 74 202 70 C220 66 236 76 238 92 C240 106 232 116 218 118 C208 119 202 116 199 110 C196 118 196 130 198 140 C200 150 208 152 216 156 C224 160 224 168 212 168 Z" fill="#FBEED3" stroke="#6B4A3A" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M204 74 C200 60 194 52 187 47" fill="none" stroke="#6B4A3A" stroke-width="5" stroke-linecap="round"/>
+        <path d="M218 72 C218 58 222 50 228 45" fill="none" stroke="#6B4A3A" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="185" cy="42" r="10" fill="#FFFFFF" stroke="#6B4A3A" stroke-width="4"/>
+        <circle cx="230" cy="41" r="10" fill="#FFFFFF" stroke="#6B4A3A" stroke-width="4"/>
+        <circle cx="187" cy="44" r="4" fill="#6B4A3A"/>
+        <circle cx="232" cy="43" r="4" fill="#6B4A3A"/>
+        <circle cx="183.5" cy="39.5" r="1.7" fill="#FFFFFF"/>
+        <circle cx="228.5" cy="38.5" r="1.7" fill="#FFFFFF"/>
+        <circle cx="100" cy="110" r="52" fill="#FFD98F" stroke="#6B4A3A" stroke-width="6"/>
+        <path d="M100 112 c13 -3 17 11 5 16 c-15 6 -29 -6 -24 -22 c6 -19 32 -21 42 -6 c4 6 5 12 4 18" fill="none" stroke="#E8A25E" stroke-width="6" stroke-linecap="round"/>
+        <ellipse cx="78" cy="84" rx="14" ry="8" fill="#FFFFFF" opacity=".55" transform="rotate(-28 78 84)"/>
+        <path d="M221 103 q5 5 11 2" fill="none" stroke="#6B4A3A" stroke-width="3.5" stroke-linecap="round"/>
+        <ellipse cx="212" cy="109" rx="6" ry="4.2" fill="#FFB8C8" opacity=".85"/>
+      </svg>
+      Snailpocalypse
+    </a>
+    <nav>
+      <a href="privacy/">Privacy</a>
+      <a href="support/">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <svg class="hero-toby" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Toby, a glossy cartoon snail with a butter-yellow shell, gliding along a mint slime trail">
+      <rect x="40" y="170" width="190" height="9" rx="4.5" fill="#8FE3C0" opacity=".6"/>
+      <circle cx="30" cy="174.5" r="3.2" fill="#8FE3C0" opacity=".4"/>
+      <circle cx="17" cy="174.5" r="2.2" fill="#8FE3C0" opacity=".25"/>
+      <path d="M34 168 C30 156 40 146 58 144 L148 144 C166 144 172 134 174 112 C175 92 182 74 202 70 C220 66 236 76 238 92 C240 106 232 116 218 118 C208 119 202 116 199 110 C196 118 196 130 198 140 C200 150 208 152 216 156 C224 160 224 168 212 168 Z" fill="#FBEED3" stroke="#6B4A3A" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M204 74 C200 60 194 52 187 47" fill="none" stroke="#6B4A3A" stroke-width="5" stroke-linecap="round"/>
+      <path d="M218 72 C218 58 222 50 228 45" fill="none" stroke="#6B4A3A" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="185" cy="42" r="10" fill="#FFFFFF" stroke="#6B4A3A" stroke-width="4"/>
+      <circle cx="230" cy="41" r="10" fill="#FFFFFF" stroke="#6B4A3A" stroke-width="4"/>
+      <circle cx="187" cy="44" r="4" fill="#6B4A3A"/>
+      <circle cx="232" cy="43" r="4" fill="#6B4A3A"/>
+      <circle cx="183.5" cy="39.5" r="1.7" fill="#FFFFFF"/>
+      <circle cx="228.5" cy="38.5" r="1.7" fill="#FFFFFF"/>
+      <circle cx="100" cy="110" r="52" fill="#FFD98F" stroke="#6B4A3A" stroke-width="6"/>
+      <path d="M100 112 c13 -3 17 11 5 16 c-15 6 -29 -6 -24 -22 c6 -19 32 -21 42 -6 c4 6 5 12 4 18" fill="none" stroke="#E8A25E" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="78" cy="84" rx="14" ry="8" fill="#FFFFFF" opacity=".55" transform="rotate(-28 78 84)"/>
+      <path d="M221 103 q5 5 11 2" fill="none" stroke="#6B4A3A" stroke-width="3.5" stroke-linecap="round"/>
+      <ellipse cx="212" cy="109" rx="6" ry="4.2" fill="#FFB8C8" opacity=".85"/>
+    </svg>
+
+    <h1>Snailpocalypse</h1>
+    <p class="tagline">An immortal snail is coming. Walk.</p>
+    <p class="lede">Your real daily steps are the whole game. Every step you take today becomes distance Toby has to cover. He&rsquo;s slow. He&rsquo;s glossy. He has never once stopped.</p>
+    <span class="badge">Coming soon to iPhone &middot; in beta now</span>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>🚶 Real steps only</h3>
+      <p>The game runs on your daily step count from Apple Health. Walking — actual, outside, real-life walking — is the only way to stay ahead.</p>
+    </div>
+    <div class="card">
+      <h3>🐌 Toby never stops</h3>
+      <p>While you sleep, he glides. While you&rsquo;re on vacation, he glides. The lead you build is the lead you keep — until you stop walking.</p>
+    </div>
+    <div class="card">
+      <h3>🚫 You can&rsquo;t pay him off</h3>
+      <p>Nothing in the shop makes you faster or Toby slower. Cosmetics are cosmetics. Survival is walked, never bought.</p>
+    </div>
+  </section>
+
+  <p class="quote">&ldquo;I don&rsquo;t rush. I arrive.&rdquo;<span class="who">— Toby</span></p>
+
+  <footer>
+    <nav>
+      <a href="privacy/">Privacy Policy</a> ·
+      <a href="support/">Support</a>
+    </nav>
+    <p>© 2026 Snailpocalypse</p>
+  </footer>
+
+</div>
+</body>
+</html>

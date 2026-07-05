@@ -47,7 +47,7 @@ header.site .brand {
   font-size: 1.05rem;
   letter-spacing: 0.01em;
 }
-header.site .brand svg { width: 44px; height: auto; }
+header.site .brand svg, header.site .brand img { width: 44px; height: auto; }
 header.site nav a {
   color: var(--muted);
   text-decoration: none;

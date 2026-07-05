@@ -1,0 +1,69 @@
+<svg viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Toby in his original Rose colours, matching the in-app drawToby() design:
+       glossy jelly body, bold spiral shell, closed contented eyes, mint trail. -->
+  <defs>
+    <linearGradient id="tobyBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD9E8"/>
+      <stop offset="0.55" stop-color="#FFA9CC"/>
+      <stop offset="1" stop-color="#F878AE"/>
+    </linearGradient>
+    <linearGradient id="tobyShell" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#FF9EC8"/>
+      <stop offset="0.55" stop-color="#F25E9E"/>
+      <stop offset="1" stop-color="#DE4489"/>
+    </linearGradient>
+  </defs>
+
+  <!-- mint slime trail (he moves left; the trail fades behind him) -->
+  <rect x="52" y="176" width="186" height="9" rx="4.5" fill="#A9E8CD" opacity=".75"/>
+  <circle cx="246" cy="180.5" r="3.2" fill="#A9E8CD" opacity=".5"/>
+  <circle cx="256" cy="180.5" r="2.2" fill="#A9E8CD" opacity=".3"/>
+
+  <!-- antennae (behind the head), ball-tipped -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M66 62 C60 46 52 34 46 26" stroke="#93365F" stroke-width="10"/>
+    <path d="M92 60 C92 42 96 28 100 20" stroke="#93365F" stroke-width="10"/>
+    <path d="M66 62 C60 46 52 34 46 26" stroke="#FFA9CC" stroke-width="4.5"/>
+    <path d="M92 60 C92 42 96 28 100 20" stroke="#FFA9CC" stroke-width="4.5"/>
+  </g>
+  <circle cx="44" cy="21" r="8" fill="#FFA9CC" stroke="#93365F" stroke-width="5"/>
+  <circle cx="101" cy="15" r="8" fill="#FFA9CC" stroke="#93365F" stroke-width="5"/>
+  <circle cx="41.5" cy="18" r="2" fill="#FFFFFF"/>
+  <circle cx="98.5" cy="12" r="2" fill="#FFFFFF"/>
+
+  <!-- body: head dome flowing into the foot, tail curling up past the shell -->
+  <path d="M80 50
+           C52 52 28 68 22 106
+           C15 140 18 168 36 172
+           L200 172
+           C222 172 236 166 240 152
+           C243 142 238 134 230 136
+           C222 138 218 146 210 150
+           C180 152 140 152 120 148
+           C118 128 117 106 117 88
+           C114 64 100 52 80 50 Z"
+        fill="url(#tobyBody)" stroke="#93365F" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- head sheen -->
+  <path d="M30 96 C32 76 44 62 60 57" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+
+  <!-- face: closed contented eyes, small smile, blush -->
+  <path d="M48 104 q8 -10 16 0" fill="none" stroke="#522741" stroke-width="5" stroke-linecap="round"/>
+  <path d="M84 104 q8 -10 16 0" fill="none" stroke="#522741" stroke-width="5" stroke-linecap="round"/>
+  <path d="M66 120 q7 8 14 0" fill="none" stroke="#522741" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="38" cy="116" r="7.5" fill="#FF7FB4" opacity=".6"/>
+  <circle cx="108" cy="116" r="7.5" fill="#FF7FB4" opacity=".6"/>
+
+  <!-- shell: bold spiral over a deep rose gradient -->
+  <circle cx="163" cy="108" r="56" fill="url(#tobyShell)" stroke="#93365F" stroke-width="6"/>
+  <path d="M169 108
+           A 6 6 0 0 0 157 108
+           A 13 13 0 0 0 183 108
+           A 20 20 0 0 0 143 108
+           A 27 27 0 0 0 197 108
+           A 34 34 0 0 0 163 74"
+        fill="none" stroke="#93365F" stroke-width="7" stroke-linecap="round"/>
+  <!-- shell sheens -->
+  <path d="M116 82 C124 64 142 53 160 52" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+  <circle cx="178" cy="54" r="4" fill="#FFFFFF" opacity=".9"/>
+</svg>

@@ -23,10 +23,17 @@ toby.svg        the snail; also the favicon
 **The three legal pages exist because App Store Connect requires them**, and
 their URLs are filed in the app's listing — the paths are load-bearing, and a
 broken one can hold up review. They also make specific factual claims: no
-servers, no ads, no analytics, no accounts, HealthKit data never leaves the
-device, cosmetics never affect the race. Those claims describe how the app
-actually works, so treat them as reporting rather than copy. If a change would
-make one of them untrue, that's a question for the user, not an edit.
+servers, no ads, no analytics, no accounts, cosmetics never affect the race,
+and step data stays on the device unless the player switches on one of the
+sharing features (friends, leaderboard, guilds, raids, yards), which publish a
+step total to other players through a shared CloudKit database. Those claims
+describe how the app actually works, so treat them as reporting rather than
+copy. If a change would make one of them untrue, that's a question for the
+user, not an edit.
+
+The health claim used to read "HealthKit data never leaves the device," which
+was wrong — the app published a step total whether or not the player had asked.
+Don't restore that wording; the qualified version above is the accurate one.
 
 **The header nav is duplicated in all four pages** and paths differ by depth
 (`toby.svg` and `privacy/` at the root, `../toby.svg` and `../privacy/` inside a

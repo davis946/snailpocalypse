@@ -35,8 +35,10 @@ touching the nav and footer everywhere.
 
 **Colors and shadows come from the `:root` custom properties in `styles.css`**,
 and they're deliberately matched to the in-app design language — the rounded
-system font stack, the warm pastel palette. Pages are built from the shared
-`article` / `card` / `tldr` / `details` classes rather than per-page CSS.
+system font stack, the warm pastel palette. Pages are built from what the
+stylesheet already covers rather than per-page CSS — the bare `article` and
+`details` elements are styled directly, alongside the `.card` and `.tldr`
+classes.
 
 **Toby's voice is patient and faintly ominous** ("I don't rush. I arrive."). The
 copy is written, not generated — match the register of what's around it.

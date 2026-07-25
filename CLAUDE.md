@@ -25,8 +25,10 @@ their URLs are filed in the app's listing — the paths are load-bearing, and a
 broken one can hold up review. They also make specific factual claims: no
 servers, no ads, no analytics, no accounts, cosmetics never affect the race,
 and step data stays on the device unless the player switches on one of the
-sharing features (friends, leaderboard, guilds, raids, yards), which publish a
-step total to other players through a shared CloudKit database. Those claims
+sharing features, which publish to other players through a shared CloudKit
+database. Which feature publishes what is not uniform — friends, the
+leaderboard, guilds and raids each publish a step total; yards publish only the
+yard's appearance and the gifts sent. Those claims
 describe how the app actually works, so treat them as reporting rather than
 copy. If a change would make one of them untrue, that's a question for the
 user, not an edit.

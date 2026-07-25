@@ -1,0 +1,45 @@
+# Snailpocalypse website
+
+The public site for Snailpocalypse, an iPhone game where an immortal snail (Toby)
+chases your real daily step count. The game itself lives in a separate private
+repo — nothing here talks to it, and no code is shared.
+
+Four pages of hand-written static HTML over one stylesheet. No build step, no
+dependencies, no framework, no JS. Open `index.html` in a browser to see changes.
+Pushing to `main` republishes via GitHub Pages in a minute or two, so `main` is
+production.
+
+```
+index.html      landing page
+privacy/        privacy policy
+support/        support page
+terms/          terms of use
+styles.css      every page's styles
+toby.svg        the snail; also the favicon
+```
+
+## Things that aren't obvious from the files
+
+**The three legal pages exist because App Store Connect requires them**, and
+their URLs are filed in the app's listing — the paths are load-bearing, and a
+broken one can hold up review. They also make specific factual claims: no
+servers, no ads, no analytics, no accounts, HealthKit data never leaves the
+device, cosmetics never affect the race. Those claims describe how the app
+actually works, so treat them as reporting rather than copy. If a change would
+make one of them untrue, that's a question for the user, not an edit.
+
+**The header nav is duplicated in all four pages** and paths differ by depth
+(`toby.svg` and `privacy/` at the root, `../toby.svg` and `../privacy/` inside a
+subdirectory), with the current page linking to `./`. Adding a page means
+touching the nav and footer everywhere.
+
+**Colors and shadows come from the `:root` custom properties in `styles.css`**,
+and they're deliberately matched to the in-app design language — the rounded
+system font stack, the warm pastel palette. Pages are built from the shared
+`article` / `card` / `tldr` / `details` classes rather than per-page CSS.
+
+**Toby's voice is patient and faintly ominous** ("I don't rush. I arrive."). The
+copy is written, not generated — match the register of what's around it.
+
+**The legal pages carry effective dates.** Substantive changes to those pages
+mean the date changes too; typo fixes don't.

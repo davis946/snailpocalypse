@@ -11,6 +11,7 @@ Live at: https://davis946.github.io/snailpocalypse/
 | `index.html` | Landing page |
 | `privacy/` | Privacy policy (required by App Store Connect; the app uses HealthKit) |
 | `support/` | Support page (required by App Store Connect) |
+| `terms/` | Terms of Use (required for the Shell Club subscription) |
 
 Plain static HTML + one stylesheet. No build step, no dependencies. Pushing to
 `main` republishes the site via GitHub Pages within a minute or two.
